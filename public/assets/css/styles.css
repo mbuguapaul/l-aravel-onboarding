@@ -1,0 +1,109 @@
+:root {
+    --font-family-sans-serif: "Open Sans", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+    --primary-color:#fff;
+    --accent-color:#d2f074;
+    --secondary-color:#000;
+    --nav-background:#f9fafc;
+    --black-font:#111111;
+    --secondary-red:#fd6266;
+
+     --bg-linear:linear-gradient(to right, #1a2e35, #1b232b, #19181f, #120e11, #000000);
+     --bg-linear-inv:linear-gradient(to left, #1a2e35, #1b232b, #19181f, #120e11, #000000);
+
+}
+[data-theme="dark"] {
+    --primary-color: #1f1e25; /* Dark mode color */
+    --secondary-color: #ffffff; /* Light mode color */
+    --nav-background:#0c0b10;
+    --black-font:#f9fafc;
+  }
+
+
+.form-control:focus{
+  box-shadow: none !important;
+  border: none !important;
+
+}
+  .my-input{
+    width: 100%;
+    padding: 15px !important;
+    margin: 5px 0 !important;
+    border: 1px solid #ccc;
+    border-radius: 9px !important;
+    background-color: transparent !important;
+    box-sizing: border-box;
+  }
+
+  .my-input:focus {
+    border: 1px solid var(--accent-color) !important;
+  }
+  .my-btn{
+    background-image: var(--bg-linear);
+    color:var(--nav-background) !important;
+    transition: transform 0.9s ease-in-out;
+  }
+    .my-btn:hover{
+        background-image: var(--bg-linear-inv);
+        color:var(--nav-background) !important;
+        transform: scale(1.01);
+    }
+
+  .my-card{
+    padding: 40px !important;
+  }
+
+
+
+  .sideba-link:hover{
+   color:red;
+  }
+
+.mi-card{
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  margin-bottom: 30px;
+}
+
+.profile_img{
+  border-radius: 50%;
+  width: 60%;
+  border: 1px solid var(--secondary-red);
+}
+
+
+@media (max-width: 575.99px) {  /* Target screens smaller than 576px (small devices) */
+  .logo-mobile {
+    width: 30%;
+  }
+}
+
+
+.my-ghost{
+  border: 1px solid var(--black-font) !important;
+  color:var(--secondary-color) !important;
+  transition: transform 0.9s ease-in-out;
+}
+
+.my-ghost:hover{
+  background-color: var( --accent-color) !important;
+  color:var(--secondary-color) !important;
+  transition: transform 0.9s ease-in-out;
+}
+
+
+.register-text h2{
+  margin-top: 8px !important;
+}
+
+.flex-top{
+  margin-top: 5%;
+}
+
+.my-alert{
+  background-color: var(--accent-color) !important;
+}
